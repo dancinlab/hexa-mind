@@ -1,0 +1,11 @@
+# runtime / cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# hexa-mind runtime state
+state/
+
+# build artifacts
+build/out/
+*.pdf

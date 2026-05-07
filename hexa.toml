@@ -1,0 +1,107 @@
+# hexa.toml — hexa-mind standalone package manifest
+#
+# 🧠 HEXA-MIND — n=6 mental substrate library (7-verb rollup)
+# Provenance: extracted from n6-architecture@dbd2420d on 2026-05-07
+#             (domains/cognitive/{hexa-mind, hexa-neuro, hexa-oracle,
+#              hexa-telepathy, mind-upload, superpowers, telepathy}).
+
+[package]
+name = "hexa-mind"
+version = "1.0.0"
+entry = "cli/hexa-mind.hexa"
+description = "🧠 HEXA-MIND — n=6 mental substrate library: mind/neuro/oracle/hexa_telepathy/telepathy/mind_upload/superpowers. Each verb derives every parameter from σ(6)=12, τ(6)=4, φ(6)=2 number theory. SPECULATIVE-grade content — quantum oracles, brain-to-brain channels, mind upload, BCI augmentation. Sister-rollup to hexa-codex (knowledge), hexa-senses (👁️ senses), hexa-brain (BCI hardware), anima (consciousness)."
+license = "MIT"
+authors = ["박민우 <nerve011235@gmail.com>"]
+repository = "https://github.com/need-singularity/hexa-mind"
+homepage = "https://github.com/need-singularity/hexa-mind"
+readme = "README.md"
+keywords = ["mental-substrate", "mind", "neuro", "oracle", "telepathy", "mind-upload", "superpowers", "n6-architecture", "hexa-family", "spec-catalog", "speculative"]
+categories = ["mental-substrate", "spec-catalog", "speculative"]
+
+[[bin]]
+name = "hexa-mind"
+path = "cli/hexa-mind.hexa"
+
+[test]
+runner = "hexa"
+files = [
+    "tests/test_selftest.hexa",
+]
+
+[test.python]
+runner = "pytest"
+marker = "auto"
+files = [
+    "tests/test_n6_invariants.py",
+    "tests/test_verifiers.py",
+    "tests/test_spec_inventory.py",
+]
+
+[scripts]
+install = "install.hexa"
+
+# ── Modules manifest (7 verb mind-rollup) ─────────────────
+[modules]
+mind = [
+    "mind/hexa-mind.md",                       # mental architecture core
+    "neuro/hexa-neuro.md",                     # neural interface substrate
+    "oracle/hexa-oracle.md",                   # 6-qubit quantum predictor (speculative)
+    "hexa_telepathy/hexa-telepathy.md",        # quantum-entangled brain-to-brain channels (speculative)
+    "telepathy/telepathy.md",                  # bilateral BCI telepathy (speculative)
+    "mind_upload/mind-upload.md",              # 1.44M-channel scan + 4096yr preservation (speculative)
+    "superpowers/superpowers.md",              # 6-axis BCI+exoskeleton augmentation
+]
+verify = [
+    "verify/cli.py",
+    "verify/n6_arithmetic.py",
+    "verify/spec_inventory.py",
+]
+build = [
+    "build/Makefile",
+]
+
+[dependencies]
+hexa-lang = ">=1.0.0"
+python    = ">=3.10"   # stdlib only
+
+# ── n=6 master identity ───────────────────────────────────
+[invariants.n6]
+sigma_6           = 12
+tau_6             = 4
+phi_6             = 2
+J_2               = 24
+master_identity   = "σ(6) · φ(6) = n · τ(6) = J₂ = 24"
+verb_count        = 7
+qubit_block       = 6                # oracle 6-qubit quantum block
+augmentation_axes = 6                # superpowers 6-axis BCI augmentation
+
+# ── Speculation honesty (raw#10 honest C3) ────────────────
+[speculation]
+oracle_quantum  = "6-qubit predictor — quantum supremacy claim depends on hardware; SPECULATIVE"
+hexa_telepathy  = "quantum-entangled brain-to-brain — requires unproven entanglement at neural scale; SPECULATIVE"
+mind_upload     = "1.44M-channel scan + 4096yr MRAM preservation + AGI emulation — uploading problem unsolved; SPECULATIVE"
+superpowers     = "BCI + exoskeleton augmentation — engineering, not learned; partly grounded"
+
+# ── Closure provenance (raw#10 honest C3) ─────────────────
+[closure]
+verbs_total       = 7
+verbs_wired       = 0
+verbs_spec        = 7
+verifiers_pass    = "TBD (initial extraction)"
+verdict           = "SPEC_CATALOG_ONLY (4/7 verbs SPECULATIVE)"
+extracted_from    = "n6-architecture@dbd2420d on 2026-05-07"
+
+# ── Scope honesty (raw#10 C3) ─────────────────────────────
+[scope]
+honest_scope = "🧠 7-verb mental substrate library. 4 of 7 verbs (oracle, hexa_telepathy, mind_upload, superpowers) carry explicit speculation flags — they preregister physics-bound or open-problem assumptions, not validated results. Reading the closed-form spec is grounded; running it requires the unsolved physics."
+not_scope = [
+    "AI alignment / safety / interpretability (those live in hexa-codex)",
+    "BCI hardware (lives in hexa-brain)",
+    "Sensory substrate (lives in hexa-senses)",
+    "Consciousness as soul-framework (lives in anima)",
+    "Validating the speculative claims (preregister only)",
+]
+
+[cost]
+mac_local_default = "$0 (markdown spec library + Python stdlib + .hexa CLI)"
+all_verbs         = "$0 (read-only)"

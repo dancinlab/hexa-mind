@@ -1,0 +1,51 @@
+// install.hexa — hx build hook for hexa-mind.
+
+fn check_python(min_ver: str) -> bool {
+    let out = exec("python3 --version 2>&1").trim()
+    if !out.contains("Python 3.") {
+        eprintln("[hexa-mind/install] WARN: python3 not found")
+        return false
+    }
+    println("[hexa-mind/install]   python found: " + out)
+    return true
+}
+
+fn run_quick_selftest(root: str) -> bool {
+    let cli = root + "/cli/hexa-mind.hexa"
+    let exists = exec("[ -f \"" + cli + "\" ] && echo y || echo n").trim()
+    if exists != "y" {
+        eprintln("[hexa-mind/install] WARN: cli/hexa-mind.hexa missing — skip selftest")
+        return false
+    }
+    println("[hexa-mind/install] [post] running quick selftest (7-verb spec count)")
+    let cmd = "HEXA_MIND_ROOT=\"" + root + "\" hexa run \"" + cli + "\" selftest 2>&1"
+    let raw = exec(cmd)
+    if raw.contains("__HEXA_MIND_SELFTEST__ PASS") {
+        println("[hexa-mind/install]   selftest PASS — 7/7 verb specs present")
+        return true
+    }
+    eprintln("[hexa-mind/install] WARN: selftest non-PASS")
+    return false
+}
+
+fn main() -> void {
+    let mut root = env("HX_PKG_DIR")
+    if root == "" { root = exec("pwd").trim() }
+    let phase = env("HX_HOOK_PHASE")
+    let mut p = phase
+    if p == "" { p = "both" }
+    println("[hexa-mind/install] HX_PKG_DIR=" + root + " phase=" + p)
+
+    let entry = root + "/cli/hexa-mind.hexa"
+    let entry_ok = exec("[ -f \"" + entry + "\" ] && echo y || echo n").trim()
+    if entry_ok != "y" {
+        eprintln("[hexa-mind/install] ERROR: canonical entry missing: " + entry)
+        exit(1)
+    }
+    println("[hexa-mind/install] canonical entry OK: cli/hexa-mind.hexa")
+
+    if p == "pre" || p == "both" { let _ = check_python("3.10") }
+    if p == "post" || p == "both" { let _ = run_quick_selftest(root) }
+
+    println("[hexa-mind/install] done — hx will generate " + env("HX_BIN_DIR") + "/hexa-mind shim")
+}
