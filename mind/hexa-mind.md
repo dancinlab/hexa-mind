@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@dbd2420d:domains/cognitive/hexa-mind/hexa-mind.md -->
+<!-- @canonical: canon@dbd2420d:domains/cognitive/hexa-mind/hexa-mind.md -->
 <!-- @extracted: 2026-05-07 -->
 <!-- @md5_at_extraction: 6f274a2d31ccfb213f7051a2690a0cbd -->
 <!-- gold-standard: shared/harness/sample.md -->

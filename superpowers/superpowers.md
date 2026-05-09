@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@dbd2420d:domains/cognitive/superpowers/superpowers.md -->
+<!-- @canonical: canon@dbd2420d:domains/cognitive/superpowers/superpowers.md -->
 <!-- @extracted: 2026-05-07 -->
 <!-- @md5_at_extraction: 0358d9c60002e4c86706efa9681dc72a -->
 <!-- gold-standard: shared/harness/sample.md -->

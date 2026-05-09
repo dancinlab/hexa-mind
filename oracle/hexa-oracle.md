@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@dbd2420d:domains/cognitive/hexa-oracle/hexa-oracle.md -->
+<!-- @canonical: canon@dbd2420d:domains/cognitive/hexa-oracle/hexa-oracle.md -->
 <!-- @extracted: 2026-05-07 -->
 <!-- @md5_at_extraction: 87743c69ab3c4908531a6ed3251970c1 -->
 <!-- gold-standard: shared/harness/sample.md -->

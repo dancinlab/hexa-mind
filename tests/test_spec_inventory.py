@@ -27,7 +27,7 @@ def test_each_spec_present_with_canonical(verb, relpath, _speculative):
     assert path.exists(), f"missing: {relpath}"
     head = path.read_text(encoding="utf-8")[:1024]
     assert "@canonical" in head
-    assert "n6-architecture@" in head
+    assert "canon@" in head
 
 
 @pytest.mark.auto

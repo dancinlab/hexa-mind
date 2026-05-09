@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@dbd2420d:domains/cognitive/hexa-telepathy/hexa-telepathy.md -->
+<!-- @canonical: canon@dbd2420d:domains/cognitive/hexa-telepathy/hexa-telepathy.md -->
 <!-- @extracted: 2026-05-07 -->
 <!-- @md5_at_extraction: 3b62386ca0caa3714a782b053df8d7a7 -->
 <!-- gold-standard: shared/harness/sample.md -->

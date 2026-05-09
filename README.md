@@ -5,7 +5,7 @@
 > Each verb derives every parameter from σ(6)=12, τ(6)=4, φ(6)=2 number
 > theory. **4 of 7 verbs are SPECULATIVE** (preregistered, not validated).
 > Sister-rollup of [hexa-codex](https://github.com/need-singularity/hexa-codex)
-> 17-verb cognitive substrate, extracted from `n6-architecture@dbd2420d`
+> 17-verb cognitive substrate, extracted from `canon@dbd2420d`
 > on 2026-05-07.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -18,7 +18,7 @@
 
 ## Why hexa-mind?
 
-`hexa-mind` is the 🧠 rollup of n6-architecture's mental-substrate verbs
+`hexa-mind` is the 🧠 rollup of canon's mental-substrate verbs
 — the part of the cognitive architecture concerned with mental
 operations, BCI augmentation, quantum prediction, and consciousness
 upload. Where [hexa-codex](https://github.com/need-singularity/hexa-codex)
@@ -132,7 +132,7 @@ make -C build everything # ci + selftest (.hexa)
 - 🧬 [need-singularity/hexa-brain](https://github.com/need-singularity/hexa-brain) — BCI hardware sister-repo.
 - 👻 [need-singularity/anima](https://github.com/need-singularity/anima) — consciousness/soul cousin.
 
-Upstream concept SSOT: `n6-architecture/domains/cognitive/{hexa-mind,hexa-neuro,hexa-oracle,hexa-telepathy,mind-upload,superpowers,telepathy}/`.
+Upstream concept SSOT: `canon/domains/cognitive/{hexa-mind,hexa-neuro,hexa-oracle,hexa-telepathy,mind-upload,superpowers,telepathy}/`.
 
 ---
 

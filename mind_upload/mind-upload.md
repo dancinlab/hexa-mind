@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@dbd2420d:domains/cognitive/mind-upload/mind-upload.md -->
+<!-- @canonical: canon@dbd2420d:domains/cognitive/mind-upload/mind-upload.md -->
 <!-- @extracted: 2026-05-07 -->
 <!-- @md5_at_extraction: 5143432487365bc211a2fc7034bb85da -->
 <!-- gold-standard: shared/harness/sample.md -->

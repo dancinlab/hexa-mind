@@ -186,7 +186,7 @@ fn cmd_inventory(a: [str]) {
 
 fn cmd_version() {
     println("hexa-mind " + VERSION)
-    println("standalone mental-substrate library (extracted from n6-architecture@dbd2420d on 2026-05-07)")
+    println("standalone mental-substrate library (extracted from canon@dbd2420d on 2026-05-07)")
     println("license: MIT")
     println("repo:    https://github.com/need-singularity/hexa-mind")
 }

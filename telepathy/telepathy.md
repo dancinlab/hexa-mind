@@ -1,4 +1,4 @@
-<!-- @canonical: n6-architecture@dbd2420d:domains/cognitive/telepathy/telepathy.md -->
+<!-- @canonical: canon@dbd2420d:domains/cognitive/telepathy/telepathy.md -->
 <!-- @extracted: 2026-05-07 -->
 <!-- @md5_at_extraction: 9cd97ae3cf4c79272e10ccb8e594a7e9 -->
 <!-- gold-standard: shared/harness/sample.md -->
