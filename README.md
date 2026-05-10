@@ -8,6 +8,7 @@
 > 17-verb cognitive substrate, extracted from `canon@dbd2420d`
 > on 2026-05-07.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20102612.svg)](https://doi.org/10.5281/zenodo.20102612)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-informational.svg)](hexa.toml)
 [![Verbs: 7](https://img.shields.io/badge/verbs-7_(mental)-blue.svg)](#verbs)
