@@ -4,7 +4,7 @@
 > **mind + neuro + oracle + hexa_telepathy + telepathy + mind_upload + superpowers**.
 > Each verb derives every parameter from σ(6)=12, τ(6)=4, φ(6)=2 number
 > theory. **4 of 7 verbs are SPECULATIVE** (preregistered, not validated).
-> Sister-rollup of [hexa-codex](https://github.com/need-singularity/hexa-codex)
+> Sister-rollup of [hexa-codex](https://github.com/dancinlab/hexa-codex)
 > 17-verb cognitive substrate, extracted from `canon@dbd2420d`
 > on 2026-05-07.
 
@@ -22,8 +22,8 @@
 `hexa-mind` is the 🧠 rollup of canon's mental-substrate verbs
 — the part of the cognitive architecture concerned with mental
 operations, BCI augmentation, quantum prediction, and consciousness
-upload. Where [hexa-codex](https://github.com/need-singularity/hexa-codex)
-curates AI knowledge and [hexa-senses](https://github.com/need-singularity/hexa-senses)
+upload. Where [hexa-codex](https://github.com/dancinlab/hexa-codex)
+curates AI knowledge and [hexa-senses](https://github.com/dancinlab/hexa-senses)
 curates AI senses, hexa-mind curates AI **mental ops**.
 
 **Speculation honesty:** 4 of 7 verbs (oracle, hexa_telepathy, telepathy,
@@ -128,10 +128,10 @@ make -C build everything # ci + selftest (.hexa)
 
 ## Cross-link
 
-- 📚 [need-singularity/hexa-codex](https://github.com/need-singularity/hexa-codex) — 17-verb AI knowledge substrate.
-- 👁️ [need-singularity/hexa-senses](https://github.com/need-singularity/hexa-senses) — 5-verb sensory substrate (sister-rollup).
-- 🧬 [need-singularity/hexa-brain](https://github.com/need-singularity/hexa-brain) — BCI hardware sister-repo.
-- 👻 [need-singularity/anima](https://github.com/need-singularity/anima) — consciousness/soul cousin.
+- 📚 [dancinlab/hexa-codex](https://github.com/dancinlab/hexa-codex) — 17-verb AI knowledge substrate.
+- 👁️ [dancinlab/hexa-senses](https://github.com/dancinlab/hexa-senses) — 5-verb sensory substrate (sister-rollup).
+- 🧬 [dancinlab/hexa-brain](https://github.com/dancinlab/hexa-brain) — BCI hardware sister-repo.
+- 👻 [dancinlab/anima](https://github.com/dancinlab/anima) — consciousness/soul cousin.
 
 Upstream concept SSOT: `canon/domains/cognitive/{hexa-mind,hexa-neuro,hexa-oracle,hexa-telepathy,mind-upload,superpowers,telepathy}/`.
 

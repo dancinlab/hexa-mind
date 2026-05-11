@@ -188,7 +188,7 @@ fn cmd_version() {
     println("hexa-mind " + VERSION)
     println("standalone mental-substrate library (extracted from canon@dbd2420d on 2026-05-07)")
     println("license: MIT")
-    println("repo:    https://github.com/need-singularity/hexa-mind")
+    println("repo:    https://github.com/dancinlab/hexa-mind")
 }
 
 fn cmd_help() {
