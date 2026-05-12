@@ -89,30 +89,30 @@ honesty at runtime.
 
 ## Install
 
-### Via `hx` (works today)
-
 ```bash
-# `hx` does not auto-detect hexa.toml's `entry` field yet.
-hx install hexa-mind --entry cli/hexa-mind.hexa
-hexa-mind --version           # → 1.0.0
-hexa-mind selftest            # → 7/7 verb specs PASS
-hexa-mind verify all          # → 2/2 verifiers PASS
+# 1. Install hexa-lang (ships `hexa` + `hx` package manager)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dancinlab/hexa-lang/main/install.sh)"
+
+# 2. Install hexa-mind
+hx install hexa-mind          # global, pulls latest from registry
 ```
 
-### CLI subcommands
+## Run
 
 ```bash
-hexa-mind mind            # read mind verb spec
-hexa-mind neuro           # neural interface
-hexa-mind oracle          # SPECULATIVE — quantum predictor
-hexa-mind hexa_telepathy  # SPECULATIVE — quantum brain channels
-hexa-mind telepathy       # SPECULATIVE — bilateral BCI
-hexa-mind mind_upload     # SPECULATIVE — consciousness upload
-hexa-mind superpowers     # 6-axis BCI augmentation
-hexa-mind list            # 7-verb table + speculation tag
-hexa-mind selftest        # 7/7 spec presence sweep
-hexa-mind verify [check]  # Python verifier dispatcher
-hexa-mind inventory       # spec presence + canonical-header audit
+hexa-mind mind             # mental architecture core
+hexa-mind neuro            # neural interface substrate
+hexa-mind oracle           # 6-qubit quantum predictor (SPECULATIVE)
+hexa-mind hexa_telepathy   # quantum-entangled brain-to-brain (SPECULATIVE)
+hexa-mind telepathy        # bilateral BCI telepathy (SPECULATIVE)
+hexa-mind mind_upload      # consciousness upload (SPECULATIVE)
+hexa-mind superpowers      # BCI + exoskeleton augmentation
+hexa-mind list             # verb table + caveats
+hexa-mind selftest         # 7-verb spec presence sweep
+hexa-mind verify [check]   # Python verifier dispatcher
+hexa-mind inventory        # spec presence + canonical-header audit
+hexa-mind version          # print version
+hexa-mind help             # full --help (subcommands + env vars)
 ```
 
 ### Build / test
