@@ -33,20 +33,6 @@ hypotheses, not validated implementations. See [speculation honesty](#speculatio
 
 ---
 
-## Verbs
-
-| Verb              | Spec                                                | Concern                                             | Status         |
-|-------------------|-----------------------------------------------------|-----------------------------------------------------|----------------|
-| `mind`            | [mind/hexa-mind.md](mind/hexa-mind.md)              | mental architecture core                             | grounded       |
-| `neuro`           | [neuro/hexa-neuro.md](neuro/hexa-neuro.md)          | neural interface substrate                           | grounded       |
-| `oracle`          | [oracle/hexa-oracle.md](oracle/hexa-oracle.md)      | 6-qubit quantum predictor                            | ⚠️ SPECULATIVE |
-| `hexa_telepathy`  | [hexa_telepathy/hexa-telepathy.md](hexa_telepathy/hexa-telepathy.md) | quantum-entangled brain-to-brain channels       | ⚠️ SPECULATIVE |
-| `telepathy`       | [telepathy/telepathy.md](telepathy/telepathy.md)    | bilateral BCI telepathy                              | ⚠️ SPECULATIVE |
-| `mind_upload`     | [mind_upload/mind-upload.md](mind_upload/mind-upload.md) | 1.44M-channel scan + 4096yr preservation         | ⚠️ SPECULATIVE |
-| `superpowers`     | [superpowers/superpowers.md](superpowers/superpowers.md) | 6-axis BCI + exoskeleton augmentation             | grounded (engineering) |
-
----
-
 ## Speculation honesty
 
 Per `hexa.toml [speculation]`:
