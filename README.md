@@ -14,6 +14,10 @@
 [![Verbs: 7](https://img.shields.io/badge/verbs-7_(mental)-blue.svg)](#verbs)
 [![Speculative: 4/7](https://img.shields.io/badge/speculative-4%2F7-yellow.svg)](#speculation-honesty)
 [![n=6 lattice](https://img.shields.io/badge/n=6-σ·φ_=_n·τ_=_24-blue.svg)](#n6-master-identity)
+[![Closure: 100%](https://img.shields.io/badge/closure-100%25_(2%2F2)-brightgreen.svg)](#verify)
+[![Verifiers: 2/2](https://img.shields.io/badge/verifiers-2%2F2_PASS-brightgreen.svg)](#verify)
+[![pytest: 19/19](https://img.shields.io/badge/pytest-19%2F19_PASS-brightgreen.svg)](#verify)
+[![Real-limits](https://img.shields.io/badge/limits-real_(LATTICE__POLICY)-informational.svg)](LATTICE_POLICY.md)
 
 ---
 
@@ -112,6 +116,57 @@ make -C build everything # ci + selftest (.hexa)
 
 ---
 
+## Verify
+
+`hexa-mind` is **100% closed** (spec-catalog closure) by **2 Python
+verifiers + 19 pytest cases**. Closure here means the spec catalog +
+n=6 lattice arithmetic + speculation-honesty manifest all check out —
+**not** that the 4 SPECULATIVE verbs have been validated. See
+[Speculation honesty](#speculation-honesty) and
+[`LIMIT_BREAKTHROUGH.md`](LIMIT_BREAKTHROUGH.md).
+
+```bash
+# one-shot: 2/2 verifiers
+python3 verify/cli.py all
+
+# JSON output
+python3 verify/cli.py all --json
+
+# pytest suite (19/19 auto)
+python3 -m pytest tests/ -m auto -v
+
+# via Makefile
+make -C build ci
+```
+
+| Verifier              | Sub-checks | Status | What it proves                                        |
+|-----------------------|-----------:|--------|-------------------------------------------------------|
+| `n6_arithmetic.py`    |        6/6 | PASS   | σ(6)·φ(6) = n·τ(6) = J₂ = 24; speculation manifest    |
+| `spec_inventory.py`   |        7/7 | PASS   | 7 verb specs present (3 grounded + 4 speculative)     |
+| **Total**             |   **2/2**  | **PASS** | **100% closure** (spec-catalog)                     |
+| `pytest -m auto`      |      19/19 | PASS   | Mirror tests for both verifiers + invariants          |
+
+### Real-limits honesty (per `LATTICE_POLICY.md §1.2`)
+
+Closure verifies the **catalog**, not the **claims**. The 4 SPECULATIVE
+verbs (oracle, hexa_telepathy, telepathy, mind_upload) carry
+**UNPROVEN** markers and are audited against *real* cognitive /
+physical / engineering ceilings in [`LIMIT_BREAKTHROUGH.md`](LIMIT_BREAKTHROUGH.md):
+
+- **Cognitive psychology** — Miller 7±2, Yerkes-Dodson, Hick's law,
+  power law of practice (reaction-time / accuracy benchmarks).
+- **BCI engineering** — Utah array (96-ch), Neuralink N1 (1024-ch),
+  current state-of-the-art write/read bandwidth.
+- **External standards** — APA, DSM-5, NIH metrics define their own
+  measurement scales; this repo does **not** fit them to the n=6 lattice
+  and offers **no clinical / diagnostic advice**.
+
+Mental and psychological claims for novel theories in this repo are
+**STRICTLY UNPROVEN preregistrations** — the lattice is an *organising
+vocabulary*, never a *truth predicate*.
+
+---
+
 ## Cross-link
 
 - 📚 [dancinlab/hexa-codex](https://github.com/dancinlab/hexa-codex) — 17-verb AI knowledge substrate.
@@ -125,7 +180,8 @@ Upstream concept SSOT: `canon/domains/cognitive/{hexa-mind,hexa-neuro,hexa-oracl
 
 ## Status
 
-**SPEC_CATALOG_ONLY at v1.0.0** (4/7 verbs SPECULATIVE).
+**SPEC_CATALOG_CLOSED at v1.0.0 — 100% closure** (2/2 verifiers + 19/19
+pytest). 4/7 verbs remain preregistered **SPECULATIVE / UNPROVEN**.
 
 What works at v1.0:
 
@@ -133,13 +189,15 @@ What works at v1.0:
 - `hexa-mind list` prints the 7-verb table + speculation tags.
 - `hexa-mind <verb>` prints spec path + first 20 lines (with SPECULATIVE flag where applicable).
 - `hexa-mind selftest` confirms 7/7 spec presence.
-- `hexa-mind verify all` runs Python verifiers (n6 / inventory + speculation honesty).
+- `hexa-mind verify all` runs Python verifiers (n6 / inventory + speculation honesty) — **2/2 PASS**.
+- `pytest -m auto` — **19/19 PASS**.
 
 What is **out of scope** at v1.0:
 
 - Working `.hexa` modules for any verb (no quantum predictor / BCI / upload pipeline).
-- Validating any SPECULATIVE claim (preregister only).
+- Validating any SPECULATIVE claim (preregister only — UNPROVEN markers preserved).
 - Bridging to hexa-brain hardware (cross-link only).
+- Clinical / diagnostic advice (APA, DSM-5, NIH define their own scales).
 
 ---
 

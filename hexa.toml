@@ -87,9 +87,18 @@ superpowers     = "BCI + exoskeleton augmentation — engineering, not learned; 
 verbs_total       = 7
 verbs_wired       = 0
 verbs_spec        = 7
-verifiers_pass    = "TBD (initial extraction)"
-verdict           = "SPEC_CATALOG_ONLY (4/7 verbs SPECULATIVE)"
+verifiers_total   = 2
+verifiers_pass    = 2                      # n6 (6/6) + inventory (7/7) sub-checks
+verifiers_pct     = 100
+pytest_total      = 19
+pytest_pass       = 19
+pytest_pct        = 100
+closure_pct       = 100
+verdict           = "SPEC_CATALOG_CLOSED — 100% (2/2 verifiers + 19/19 pytest); 4/7 verbs remain preregistered SPECULATIVE / UNPROVEN"
+verified_on       = "2026-05-13"
 extracted_from    = "canon@dbd2420d on 2026-05-07"
+real_limits       = "LIMIT_BREAKTHROUGH.md — cognitive psychology (Miller 7±2 / Yerkes-Dodson / Hick / power law of practice); BCI engineering (Utah 96-ch / Neuralink N1 1024-ch); APA + DSM-5 + NIH metrics — NOT lattice fits"
+unproven_markers  = "oracle / hexa_telepathy / telepathy / mind_upload preserved as UNPROVEN preregistrations per LATTICE_POLICY §1.2; no clinical/diagnostic advice"
 
 # ── Scope honesty (raw#10 C3) ─────────────────────────────
 [scope]
