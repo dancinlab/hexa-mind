@@ -1,4 +1,23 @@
-# 🧠 hexa-mind — n=6 mental substrate (7-verb library)
+<p align="center"><img src="docs/logo.svg" width="140" alt="hexa-mind"></p>
+
+<h1 align="center">🤖 hexa-mind</h1>
+
+<p align="center"><strong>HEXA-AI Family</strong> — AI · ML · LLM · mental substrate · 7-verb closed-form catalog</p>
+
+<p align="center">
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blue"></a>
+  <img alt="Sibling" src="https://img.shields.io/badge/sibling-hexa--chip%20·%20hexa--earth%20·%20hexa--energy-blueviolet">
+  <img alt="Spec" src="https://img.shields.io/badge/spec-v1.0-success">
+  <img alt="Verbs" src="https://img.shields.io/badge/verbs-7%20mental-informational">
+  <img alt="Speculative" src="https://img.shields.io/badge/speculative-4%2F7-yellow">
+  <img alt="Verify" src="https://img.shields.io/badge/verifiers-2%2F2%20PASS-brightgreen">
+</p>
+
+<p align="center">AI · ML · LLM · BCI · neuro · oracle · telepathy · mind-upload · n=6 lattice · σ·φ=n·τ=24</p>
+
+---
+
+# hexa-mind — n=6 mental substrate (7-verb library)
 
 > 7-verb mental substrate organized as a closed-form spec catalog:
 > **mind + neuro + oracle + hexa_telepathy + telepathy + mind_upload + superpowers**.
@@ -198,6 +217,32 @@ What is **out of scope** at v1.0:
 - Validating any SPECULATIVE claim (preregister only — UNPROVEN markers preserved).
 - Bridging to hexa-brain hardware (cross-link only).
 - Clinical / diagnostic advice (APA, DSM-5, NIH define their own scales).
+
+---
+
+## Repo layout
+
+```
+hexa-mind/
+├── mind/                 # mental ops verb (grounded)
+├── neuro/                # neuroscience verb (grounded)
+├── oracle/               # 6-qubit quantum predictor (SPECULATIVE)
+├── hexa_telepathy/       # quantum-entangled BCI (SPECULATIVE)
+├── telepathy/            # bilateral BCI telepathy (SPECULATIVE)
+├── mind_upload/          # consciousness upload (SPECULATIVE)
+├── superpowers/          # engineered augmentation verb (grounded)
+├── dream-recorder/       # hippocampal-replay recorder subsystem
+├── cli/                  # CLI surface
+├── build/                # build artefacts
+├── AI-*.md               # 14+ AI spec sheets (alignment · safety · interpretability · etc.)
+├── ANIMA-*.md            # ANIMA-SoC / ANIMA-service spec
+├── COGNITIVE-*.md        # cognitive architecture / social-psychology specs
+├── BRAIN-COMPUTER-INTERFACE.md
+├── BCI-6CH-N6-MAPPING.md
+├── AGENTS.tape           # .tape v1.2 identity + project tree
+├── hexa.toml             # project manifest (incl. [speculation])
+└── LICENSE               # MIT
+```
 
 ---
 
