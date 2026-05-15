@@ -46,7 +46,7 @@
 @I id001 := "hexa-mind" :: identity-claim [d=2026-05-14 active]
   kind = "HEXA-AI family — AI · ML · LLM"
   brief = "HEXA-AI family · AI · ML · LLM"
-  parent = "dancinlab/echoes"
+  parent = "dancinlab"
 
 @L l1 := "repo-layout" :: structure [active]
   AGENTS.tape -> "this file · governance + identity (.tape v1.2)"
