@@ -71,7 +71,6 @@ fn _is_speculative(verb: str) -> bool {
 
 fn _print_caveats() {
     println("")
-    println("--- caveats (raw#10 C3) ---")
     println("  1. SPEC_CATALOG_ONLY at v1.0.0. 0/7 verbs ship a working .hexa.")
     println("  2. SPECULATIVE verbs (4/7): oracle (quantum), hexa_telepathy +")
     println("     telepathy (brain-to-brain entanglement), mind_upload")
